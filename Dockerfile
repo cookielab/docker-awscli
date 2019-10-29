@@ -2,9 +2,8 @@ FROM cookielab/alpine:3.10
 
 ARG AWSCLI_VERSION
 
-RUN apk --update --no-cache add bash python py-pip jq curl
-RUN pip install awscli=="${AWSCLI_VERSION}"
-RUN apk --no-cache del py-pip
+RUN apk --update --no-cache add bash python3 jq curl
+RUN pip3 install awscli=="${AWSCLI_VERSION}"
 
 USER 1987
 ONBUILD USER root
