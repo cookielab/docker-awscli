@@ -1,4 +1,4 @@
-FROM cookielab/alpine:3.10
+FROM cookielab/alpine:3.11
 
 ARG AWSCLI_VERSION
 
