@@ -22,7 +22,5 @@ build:
       --destination $DOCKER_IMAGE:$DOCKER_IMAGE_TAG_MINOR \
       --destination $DOCKER_IMAGE:latest \
       --single-snapshot
-  tags:
-    - docker
   only:
     - tags
